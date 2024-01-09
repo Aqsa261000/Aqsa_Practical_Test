@@ -16,6 +16,7 @@
 
 body {
   font-size: 62.5%; /* 10px = 1rem */
+  overflow-x: hidden;
 }
 
 /* utility classes */
