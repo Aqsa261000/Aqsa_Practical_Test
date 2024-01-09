@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: rgb(4, 30, 45);
+  --color-secondary: rgb(183, 10, 128);
+  --color-secondary-light: rgb(236, 187, 221);
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+  --color-extra-light-grey: rgba(189, 206, 224, 0.1);
+  --color-light-blue: rgb(154, 203, 255);
+}
+
+body {
+  font-size: 62.5%; /* 10px = 1rem */
+}
+
+/* utility classes */
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-container {
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  grid-template-rows: 1024px 800px;
+}
+
+/* section styles */
+
+.section-container {
+  flex-direction: column;
+
+  height: 100vh;
+  width: 100%;
+}
+.section-container .heading {
+  /* height: 100vh; */
+
+  flex-direction: column;
+}
+.main-heading {
+  text-align: center;
+  /* color: var(--color-white); */
+  font-size: 56px;
+  font-family: Heebo;
+  font-weight: 500;
+  line-height: 64px;
+  word-wrap: break-word;
+  margin-bottom: 4rem;
+  background: linear-gradient(to right, #ffffff, #ffffff78);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* search bar styles */
+
+.search .input-field {
+  text-align: center;
+  color: #bdcee0;
+  font-size: 16px;
+  font-family: Heebo;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.search .search-button-container {
+  width: 154px;
+  align-self: stretch;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: #21409a;
+  border-radius: 48px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+}
+
+.search .search-button {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: Heebo;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 800px) {
+  .search-bar {
+    gap: 300px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .search-bar {
+    gap: 200px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .search-bar {
+    gap: 100px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .search-bar {
+    gap: 50px;
+  }
+  .main-heading {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .search-bar {
+    gap: 20px;
+  }
+}

@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: rgb(4, 30, 45);
+  --color-secondary: rgb(183, 10, 128);
+  --color-secondary-light: rgb(236, 187, 221);
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+  --color-extra-light-grey: rgba(189, 206, 224, 0.1);
+  --color-light-blue: rgb(154, 203, 255);
+}
+
+body {
+  font-size: 62.5%; /* 10px = 1rem */
+}
+
+/* utility classes */
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* header styles */
+
+.header-columns {
+  height: 1024px;
+  position: relative;
+  background: var(--color-primary);
+  box-shadow: 30px 60px 90px var(--color-primary);
+  /* border-top-left-radius: 30px;
+    border-top-right-radius: 30px; */
+  overflow: hidden;
+}
+.imageStyle {
+  width: 350px;
+  height: 234px;
+  border-radius: 30px;
+}
+
+.left-column {
+  width: 350px;
+  height: 1008px;
+  left: -203px;
+  top: 0px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  display: inline-flex;
+  /* border: 10px solid yellow; */
+}
+
+.right-column {
+  width: 350px;
+  height: 1008px;
+  left: 1293px;
+  top: 0px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  display: inline-flex;
+  /* border: 10px solid green; */
+}
+
+.bottom-right-column {
+  width: 350px;
+  height: 492px;
+  left: 919px;
+  top: 689px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  display: inline-flex;
+  /* border: 10px solid white; */
+}
+
+.bottom-center-column {
+  width: 350px;
+  height: 492px;
+  left: 545px;
+  top: 806px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  display: inline-flex;
+  /* border: 1px solid blue; */
+}
+.bottom-left-column {
+  width: 350px;
+  height: 492px;
+  left: 171px;
+  top: 689px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  display: inline-flex;
+}
+.top-row {
+  width: 1098px;
+  height: 351px;
+  left: 171px;
+  top: -202px;
+  position: absolute;
+  /* border: 10px solid brown; */
+}
+
+.top-row-left-column {
+  width: 350px;
+  height: 234px;
+  left: 0px;
+  top: 117px;
+  position: absolute;
+  border-radius: 30px;
+}
+.top-row-right-column {
+  width: 350px;
+  height: 234px;
+  left: 374px;
+  top: 0px;
+  position: absolute;
+  border-radius: 30px;
+}
+.top-row-center-column {
+  width: 350px;
+  height: 234px;
+  left: 748px;
+  top: 117px;
+  position: absolute;
+  border-radius: 30px;
+}
+
+.header-columns .main-heading {
+  width: 936px;
+  left: 294px;
+  top: 258px;
+  position: absolute;
+  text-align: center;
+  color: transparent;
+  font-size: 88px;
+  font-family: Heebo;
+  font-weight: 500;
+  line-height: 88px;
+  word-wrap: break-word;
+  background: linear-gradient(to right, #ffffff, #ffffff50);
+  -webkit-background-clip: text;
+  /* #FFFFFF, #FFFFFF00 */
+  /* border: 1px solid yellow;  */
+}
+.sub-paragraph {
+  width: 936px;
+  left: 297px;
+  top: 450px;
+  position: absolute;
+  text-align: center;
+}
+.sub-paragraph .spanStyle1 {
+  color: var(--color-white);
+  font-size: 20px;
+  font-family: Heebo;
+  font-weight: 400;
+  line-height: 28px;
+  word-wrap: break-word;
+}
+
+.sub-paragraph .spanStyle3 {
+  color: var(--color-secondary-light);
+  font-size: 20px;
+  font-family: Heebo;
+  font-weight: 400;
+  line-height: 28px;
+  word-wrap: break-word;
+}
+.header-sign-up {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  left: 688px;
+  top: 633px;
+  position: absolute;
+  background: var(--color-primary);
+  border-radius: 50px;
+  border: 2px #bdcee0 solid;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  display: inline-flex;
+}
+.header-sign-up-button {
+  text-align: center;
+  color: var(--color-white);
+  font-size: 16px;
+  font-family: Heebo;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+}
